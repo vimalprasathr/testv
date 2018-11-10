@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tamil Nadu e-Governance Agency</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="TNeGA, tamilnadu egovernance agency, tnega, sso, single sign on, TNeGA - Tamilnadu e-Governance Agency, Directorate of e-Governance,  Commissionarate  of e-Governance, Schemes">
+    <meta name="description" content="Tamil Nadu e-Governance Agency (TNeGA), as a State Nodal Agency has been formed to support and drive all e-Governance initiatives of the Government of Tamil Nadu. TNeGA is implementing various e-Governance projects."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=Edge;" />
+    <link rel="icon" href="images/tnegalogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/assets/boostrap/bootstrap.min.css">
+    <script src="js/assets/jquery/jquery.min.js"></script>
+    <script src="js/assets/boostrap/bootstrap.min.js"></script>
+    <script src="js/assets/angularjs/angular.min.js"></script>
+    <script src="js/assets/angularjs/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/tnegajs.js"></script>
+    <link rel="stylesheet" href="css/tnegacss.css">
+    <link rel="stylesheet" href="css/bgimgslide.css">
+    
+    <!--        <link rel="stylesheet" type="text/css" href="css/assets/font/font-opensans.css" />-->
+    <!--        <link href="css/assets/font/font-cabin.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+    <!--  <link rel="stylesheet" type="text/css" href="ie8-and-down.css" />-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <script src="js/assets/searchbox/jquery.autocompleter.js"></script>
+    <script src="js/assets/searchbox/main.js"></script>
+    <link href="css/assets/searchbox/main.css" rel="stylesheet" type="text/css">
+    <link href="css/assets/animate/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/headerstyle.css" rel="stylesheet" type="text/css">
+  <!--  <script LANGUAGE="JavaScript">
+        var scrl = " TNeGA-Tamil Nadu e-Governance Agency..... ";
+
+        function scrlsts() {
+            scrl = scrl.substring(1, scrl.length) + scrl.substring(0, 1);
+            document.title = scrl;
+            setTimeout("scrlsts()", 300);
+        }
+    </script>-->
+    <style>
+        body {
+            /*            font-family: 'Open Sans', sans-serif;*/
+            font-family: "Lucida Bright", Georgia, serif;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        h1 {
+            /*            font-family: 'Cabin', sans-serif;*/
+            font-family: "Lucida Bright", Georgia, serif;
+        }
+        
+        #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+        }
+        
+        .rghthelp {
+            margin-top: 0px;
+            padding-top: 1px;
+            padding-bottom: 5px;
+            border-radius: 0px;
+        }
+        
+        .helpcontent {
+            background: #337ab7;
+            font-size: 15px;
+            border-radius: 0px;
+            color: black;
+            margin-top: 0px;
+        }
+        
+        .helpno {
+            /*            color: black;*/
+            text-align: center;
+            font-weight: 700;
+        }
+        
+        .navsearch>li {
+            color: red !important;
+        }
+        
+        #fnt_color
+        {
+            color:black;
+            
+        }
+        
+        .field input {
+            border: 0px;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            color: #000000;
+            height: 32.5px;
+            font-size: 15px;
+            padding: 0 12px;
+  
+                }
+        
+        .btn1
+        {
+            
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+   
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    border: 0px;
+            
+        }
+        
+        .sso_btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+    
+.ad_btn {
+     background-color: #555555;
+    color: white;
+}
+
+.ad_btn:hover {
+   
+    
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+        
+        .modal_h4{
+            color: #121149;
+            text-shadow: none;
+        }   
+        
+        #icon_btn{
+            background-color: black !important;
+        }   
+       
+    .navbar-toggle:hover {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent!important;
+        background-image: 
+        border: 1px solid transparent;
+        border-radius: 4px;
+        }
+        
+        #menu-colr{
+            color: black !important;
+            font-family: "Lucida Bright", Georgia, serif !important;
+            font-weight: 600 !important;
+        }
+        
+        #nav-res{
+            font-size: 15px !important;
+            color: black !important;
+            font-family: "Lucida Bright", Georgia, serif !important;
+            
+        }
+        
+        .RTI{
+            font-size: 14px;
+            font-weight: 600;
+            color: black !important;
+        }
+        
+        .rtia  a {
+            color: black;
+        }
+        
+        /*@media only screen and (max-width: 600px)*/
+            @media only screen and  (min-width: 600px) 
+    #helpdeskid {
+        display: none !important;
+    }
+}
+        
+    </style>
+</head>
+
+<body ng-app="tnegaApp" class="hbckg" id="style-11" >
+    
+    <div ng-controller='tnegaCtrl' ng-init='getcontent()'>
+        <div class='headertooltip'> <span style='float:left'>{{timedate | date:"MMM dd, yyyy HH:mm:ss"}}</span>&nbsp;&nbsp;&nbsp; <span ng-click='fontunset()'>A</span>&nbsp;&nbsp;&nbsp;&nbsp; <span ng-click='fontinc()'><i class="fa fa-search-plus" aria-hidden="true"></i> A</span>&nbsp;&nbsp;&nbsp;&nbsp; <span ng-click='fontdec()'><i class="fa fa-search-minus" aria-hidden="true"></i> A</span>&nbsp;&nbsp;&nbsp;&nbsp; <span><span data-toggle="modal" data-target="#myModal" class="langeng" ng-if='tnegalang == "tnega_english" '>Login</span><span class="langtm" data-toggle="modal" data-target="#myModal" ng-if='tnegalang == "tnega_tamil"'>உள் நுழை</span></span> <!--<span><span class="langeng" ng-if='tnegalang == "tnega_english" '>Sign Up</span><span class="langtm" ng-if='tnegalang == "tnega_tamil"'>பதிவு செய்க</span></span>-->&nbsp;&nbsp;&nbsp; <span><a href="html/mysecondpage.html#/sitemap">SiteMap</a></span>&nbsp;&nbsp;&nbsp; <span>
+            <label ng-click='langfun(1)'  id='tnega_eng'  style="color:#d5ffa9;ont-size: 10px;cursor:pointer" ng-if='tnegalang == "tnega_tamil"'>  English Version</label>
+            <label ng-click='langfun(2)' id='tnega_tm'  style="color:#d5ffa9;cursor:pointer;font-size: 10px;" ng-if='tnegalang == "tnega_english"'> தமிழ் வடிவம்</label></span>  </div>
+        <div class='row headerin'>
+            <div class='col-sm-offset-1'><span>&nbsp;</span></div>
+            <div class='col-sm-2  animate fadeInLeft '> <img ng-src='{{datacontent[0].Header_Content.Logo}}' width="100" height='100' class='logo'> </div>
+            <div class='col-sm-3 headertitle collapse navbar-collapse'>
+              <h1 class='logohead  animate fadeInLeft'><span ng-class="classnamelang" >{{datacontent[0].Header_Content.Website_name1}}</span> <br> <span ng-class="classnamelang">{{datacontent[0].Header_Content.Website_name2}}</span><br><span style='font-size:16px'><span ng-class="classnamelang" >{{datacontent[0].Header_Content.Website_name3}}</span><br></span><span style='font-size:12px'><span ng-class="classnamelang" >{{datacontent[0].Header_Content.Website_name4}}</span></span></h1>
+            </div>
+            <div class='col-sm-6'>
+               
+                <form>
+                     <span id="mserch" style="font-size: 17px;float: right;margin-top: 16px;margin-left: -207px;color: darkred;"><i style="font-size: 20px;color: #337ab7;" class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;State Helpdesk: 18004251333</span>
+                    <div id="mserch"  class="input-group add-on searchlist srchwidth">
+                        <div class="field ">
+                            <input type="text" name="nope" id="nope" placeholder="Search" maxlength="40" ng-model='searchval' />
+                        </div>
+                        <div class="input-group-btn">
+                            <button class="btn1 btn btn-default searchsub" type="submit" ng-click='searchredir()' style="margin-top:0px;"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                        <br> 
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class='row tnnavbarhead'>
+            <div class='col-sm-12'>
+                <div class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+                    <div class="container-fluid headerbtm">
+                        <div class="navbar-header">
+                             <h1 id="nav-res" class="navbar-toggle" style='font-size:10px;color:black;float:left;border: none; margin-top: 3px;'><span ng-class="classnamelang"  >{{datacontent[0].Header_Content.Website_name1}}</span> <br> <span ng-class="classnamelang" >{{datacontent[0].Header_Content.Website_name2}}</span><br><span ><span ng-class="classnamelang" >{{datacontent[0].Header_Content.Website_name3}}</span><br></span><span ><span ng-class="classnamelang" >{{datacontent[0].Header_Content.Website_name4}}</span></span></h1>
+                            <button id="icon_btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        </div>
+                        <div>
+                            <div class="collapse navbar-collapse  animate fadeInLeft time2" id="myNavbar">
+                                <!--                              <div class="collapse navbar-collapse " id="myNavbar">-->
+         
+                                
+                                
+                                
+          <ul class="nav navbar-nav">
+         <li  ng-repeat="menu in datacontent[0].Menu track by $index" ng-class="(menu['Menu Item1']!='')?'dropdown':''"><a ng-href="html/{{menu.URL[0].URL}}" ng-class="(menu.URL[0].URL !='')?'dropdown-toggle':''" ng-if="menu.URL[0].URL !=null"><i class="{{datacontent[0].Navicons[$index].Icon}} home" aria-hidden="true" ng-attr-style="background:{{datacontent[0].Navicons[$index]['Bg Color']}}; color:white;" ></i><br><span >&nbsp;<span id="menu-colr" ng-class=" classnamelang" data-toggle="tooltip" title="{{menu.tip}}">{{menu.Title}}</span></span><span class="caret" ng-if="menu['Menu Item1'] !=''"></span></a><a ng-href="html/{{menu.URL[0].URL}}" ng-class="(menu.URL[0].URL !='')?'dropdown-toggle':''" data-toggle="dropdown" ng-if="menu.URL[0].URL ==null"><i class="{{datacontent[0].Navicons[$index].Icon}} home" aria-hidden="true" ng-attr-style="background:{{datacontent[0].Navicons[$index]['Bg Color']}}; color:white;" ></i><br><span  >&nbsp;<span id="menu-colr" ng-class=" classnamelang" data-toggle="tooltip" title="{{menu.tip}}">{{menu.Title}}</span></span><span class="caret" ng-if="menu['Menu Item1'] !=''"></span></a>
+            <ul class="dropdown-menu" ng-if="menu['Menu Item1'] !=''">
+                <li  ng-class="(submenu['Menu Item2'] !='')?'dropdown-submenu':''" ng-repeat="submenu in menu['Menu Item1']"><a  ng-if="submenu['Menu Item1 URL'][0]['Menu Item1 URL'] !=null" ng-href="html/{{submenu['Menu Item1 URL'][0]['Menu Item1 URL']}}"><span ng-class=" classnamelang">{{submenu['Menu Item1 Title']}}</span></a><a class="dropdown-toggle" data-toggle="dropdown"  ng-if="submenu['Menu Item1 URL'][0]['Menu Item1 URL'] ==null" ng-href="html/{{submenu['Menu Item1 URL'][0]['Menu Item1 URL']}}"><span ng-class=" classnamelang">{{submenu['Menu Item1 Title']}}</span></a>
+                <ul class="dropdown-menu" ng-if="submenu['Menu Item2'] !=''">
+                    <li ng-repeat="submenu2 in submenu['Menu Item2']"><a ng-href="html/{{submenu2['Menu Item2 URL'][0]['Menu Item2 URL']}}"><span ng-class=" classnamelang">{{submenu2['Menu Item2 Title']}}</span></a></li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div style="background-color: #4aadffd1;" class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center modal_h4">Choose Your Login Option</h4>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+           
+            <div class="col-md-6">
+                
+            <div class="text-center" >
+                    <div>
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojMjczQjdBOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMxMjExNDk7IiBkPSJNNTEyLDI1NmMwLTcuOTgyLTAuMzg0LTE1Ljg3LTEuMDk4LTIzLjY2NkwzNTAuNTk0LDcyLjAyN2wtMTQuNDg5LDU4LjUxNXYtNy44NTZsLTE3MS45MTEsNDQuNDk3ICBsNDYuMjgyLDQ2LjI4bDUuODc1LDQwLjIzOWw0NC4yMjksMjcuNTgzbC0zLjY0NCwyOS4wMThMMjU2LDQ0NC40OGw2MC4zNDcsNjAuMzQ3QzQyOC42MDYsNDc3LjY5Niw1MTIsMzc2LjU5Niw1MTIsMjU2eiAgIE0yODYuNTI1LDMzMC43NzFsLTAuMjEyLTAuMjEyaDAuMjY2TDI4Ni41MjUsMzMwLjc3MXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0zMDUuMTMxLDM3Ny44MmM1LjIzNiwwLDkuNDgxLTQuMjQ2LDkuNDgxLTkuNDgxcy00LjI0Ni05LjQ4MS05LjQ4MS05LjQ4MWgtMzkuNjV2LTc0Ljg2NyAgYzI3LjgyNi00LjU0Niw0OS4xMzEtMjguNzQzLDQ5LjEzMS01Ny44MzVjMC0zMi4zMi0yNi4yOTMtNTguNjEzLTU4LjYxMy01OC42MTNzLTU4LjYxMywyNi4yOTMtNTguNjEzLDU4LjYxMyAgYzAsMjkuMDkxLDIxLjMwNiw1My4yODgsNDkuMTMxLDU3LjgzNXYxNTAuOTczYzAsNS4yMzYsNC4yNDYsOS40ODEsOS40ODEsOS40ODFjNS4yMzYsMCw5LjQ4MS00LjI0Niw5LjQ4MS05LjQ4MXYtOC4wMTFoMzkuNjUgIGM1LjIzNiwwLDkuNDgxLTQuMjQ2LDkuNDgxLTkuNDgxcy00LjI0Ni05LjQ4MS05LjQ4MS05LjQ4MWgtMzkuNjV2LTUuNjAzaDE1LjA4NGM1LjIzNiwwLDkuNDgxLTQuMjQ2LDkuNDgxLTkuNDgxICBzLTQuMjQ2LTkuNDgxLTkuNDgxLTkuNDgxaC0xNS4wODR2LTUuNjAzSDMwNS4xMzFMMzA1LjEzMSwzNzcuODJ6IE0yMTYuMzUsMjI2LjE1NmMwLTIxLjg2NCwxNy43ODYtMzkuNjUsMzkuNjUtMzkuNjUgIHMzOS42NSwxNy43ODYsMzkuNjUsMzkuNjVzLTE3Ljc4NiwzOS42NS0zOS42NSwzOS42NVMyMTYuMzUsMjQ4LjAxOCwyMTYuMzUsMjI2LjE1NnoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0QwRDFEMzsiIGQ9Ik0zMDUuMTMxLDM3Ny44MmM1LjIzNiwwLDkuNDgxLTQuMjQ2LDkuNDgxLTkuNDgxcy00LjI0Ni05LjQ4MS05LjQ4MS05LjQ4MWgtMzkuNjV2LTc0Ljg2NyAgYzI3LjgyNi00LjU0Niw0OS4xMzEtMjguNzQzLDQ5LjEzMS01Ny44MzVjMC0zMi4zMi0yNi4yOTMtNTguNjEzLTU4LjYxMy01OC42MTNjLTAuMTkzLDAtMC4zODMsMC4wMTItMC41NzQsMC4wMTR2MTguOTYzICBjMC4xOTEtMC4wMDMsMC4zODEtMC4wMTQsMC41NzQtMC4wMTRjMjEuODY0LDAsMzkuNjUsMTcuNzg2LDM5LjY1LDM5LjY1cy0xNy43ODYsMzkuNjUtMzkuNjUsMzkuNjUgIGMtMC4xOTMsMC0wLjM4My0wLjAxMi0wLjU3NC0wLjAxNHYxNzguNjI2YzAuMTkxLDAuMDEyLDAuMzgxLDAuMDI5LDAuNTc0LDAuMDI5YzUuMjM2LDAsOS40ODEtNC4yNDYsOS40ODEtOS40ODF2LTguMDExaDM5LjY1ICBjNS4yMzYsMCw5LjQ4MS00LjI0Niw5LjQ4MS05LjQ4MXMtNC4yNDYtOS40ODEtOS40ODEtOS40ODFoLTM5LjY1di01LjYwM2gxNS4wODRjNS4yMzYsMCw5LjQ4MS00LjI0Niw5LjQ4MS05LjQ4MSAgcy00LjI0Ni05LjQ4MS05LjQ4MS05LjQ4MWgtMTUuMDg0di01LjYwM2gzOS42NVYzNzcuODJ6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkM2MUI7IiBkPSJNMzQxLjM0Miw2OC43M0gxNzAuNjU4Yy04LjA4OSwwLTE0LjY0NSw2LjU1Ni0xNC42NDUsMTQuNjQ1djcwLjY4MiAgYzAsOC4wODksNi41NTYsMTQuNjQ1LDE0LjY0NSwxNC42NDVoNjUuMzQ1bDEzLjk1NSwyNi4xNWMyLjU3OSw0LjgzMiw5LjUwNiw0LjgzMiwxMi4wODMsMGwxMy45NTctMjYuMTVoNjUuMzQ1ICBjOC4wODksMCwxNC42NDUtNi41NTYsMTQuNjQ1LTE0LjY0NVY4My4zNzVDMzU1Ljk4Nyw3NS4yODYsMzQ5LjQzMSw2OC43MywzNDEuMzQyLDY4LjczeiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRUFBMjJGOyIgZD0iTTM0MS4zNDIsNjguNzNoLTg1LjkxNnYxMjkuNzA4YzIuNTYsMC4yMSw1LjIyMi0wLjk3Niw2LjYxNi0zLjU4N2wxMy45NTUtMjYuMTVoNjUuMzQ1ICBjOC4wODksMCwxNC42NDUtNi41NTYsMTQuNjQ1LTE0LjY0NVY4My4zNzVDMzU1Ljk4Nyw3NS4yODYsMzQ5LjQzMSw2OC43MywzNDEuMzQyLDY4LjczeiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRkZFREI1OyIgZD0iTTMxMi44ODksMTE5LjgxMUgxOTkuMTExYy0zLjMzMiwwLTYuMDM0LTIuNzAxLTYuMDM0LTYuMDM0YzAtMy4zMzIsMi43MDEtNi4wMzQsNi4wMzQtNi4wMzRoMTEzLjc3OCAgYzMuMzMyLDAsNi4wMzQsMi43MDEsNi4wMzQsNi4wMzRDMzE4LjkyMywxMTcuMTEsMzE2LjIyMSwxMTkuODExLDMxMi44ODksMTE5LjgxMXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZFRTE4NzsiIGQ9Ik0zMTIuODg5LDEwNy43NDRoLTU3LjQ2M3YxMi4wNjdoNTcuNDYzYzMuMzMyLDAsNi4wMzQtMi43MDEsNi4wMzQtNi4wMzQgIEMzMTguOTIzLDExMC40NDUsMzE2LjIyMSwxMDcuNzQ0LDMxMi44ODksMTA3Ljc0NHoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" width="80px" />
+                    
+                    </div>
+                    <br>
+                    <button class="sso_btn ad_btn" ng-click='loginnav()'>SSO Login</button>
+                
+                </div>    
+            </div>
+           
+            <div class="col-md-6">
+               
+                    <div class="text-center">
+                        <div>
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojMjczQjdBOyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMxMjExNDk7IiBkPSJNMjkyLjAzLDUwOS40NjRjMTAwLjQyMS0xNC4xNDgsMTgyLjEyMi04Ni41NDUsMjA5LjgyOS0xODEuOTMyTDM2MS45MTUsMTg3LjU4OWwtNDkuMzU1LDMuODM5ICBsLTYwLjA0OS02MC4wNDlsLTI0LjA5MywxOC44ODlsLTMuMTYsNC4zMWwtNDIuMjc3LDQwLjA5M2w3NC45OTMsNzQuOTkzbC0xNDQuMTk2LDYxLjU0OUwyOTIuMDMsNTA5LjQ2NHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGN0Y0RjsiIGQ9Ik0xMTMuNzc4LDMzMS4yMTJjMC01Ny44MjIsNDYuODc1LTEwNC42OTYsMTA0LjY5Ni0xMDQuNjk2UzMyMy4xNywyNzMuMzkxLDMyMy4xNywzMzEuMjEySDExMy43Nzh6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNEMzU5MzM7IiBkPSJNMjIwLjA4NiwyMjYuNTU3djEwNC42NTVIMzIzLjE3QzMyMy4xNywyNzMuOTMsMjc3LjE2MSwyMjcuNDIxLDIyMC4wODYsMjI2LjU1N3oiLz4KPGNpcmNsZSBzdHlsZT0iZmlsbDojRkY3RjRGOyIgY3g9IjIyMC4xNiIgY3k9IjE2NS42ODUiIHI9IjQ3LjE2MSIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRDM1OTMzOyIgZD0iTTIyMC4xNjIsMTE4LjUxOWMtMC4wMjYsMC0wLjA1LDAuMDAyLTAuMDc2LDAuMDAydjk0LjMxN2MwLjAyNiwwLDAuMDUsMC4wMDIsMC4wNzYsMC4wMDIgIGMyNi4wNDYsMCw0Ny4xNjEtMjEuMTE0LDQ3LjE2MS00Ny4xNjFDMjY3LjMyMywxMzkuNjMzLDI0Ni4yMDgsMTE4LjUxOSwyMjAuMTYyLDExOC41MTl6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzc4LjYxMywzMDQuNDk5aC0xNS41MTV2LTgwLjU1MWMwLTE3LjkzLTE0LjU4OC0zMi41MTgtMzIuNTE2LTMyLjUxOCAgYy0xNy45MywwLTMyLjUxOCwxNC41ODgtMzIuNTE4LDMyLjUxOHY4MC41NTFoLTE1LjUxNXYtODAuNTUxYzAtMjYuNDg2LDIxLjU0Ny00OC4wMzMsNDguMDMzLTQ4LjAzMyAgYzI2LjQ4NCwwLDQ4LjAzMSwyMS41NDcsNDguMDMxLDQ4LjAzM1YzMDQuNDk5eiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRDBEMUQzOyIgZD0iTTMzMC41ODEsMTc1LjkxNGMtMC4wNTUsMC0wLjExLDAuMDAzLTAuMTY1LDAuMDAzdjE1LjUxOWMwLjA1NSwwLDAuMTA5LTAuMDA5LDAuMTY1LTAuMDA5ICBjMTcuOTI5LDAsMzIuNTE2LDE0LjU4OCwzMi41MTYsMzIuNTE4djgwLjU1MWgxNS41MTV2LTgwLjU1MUMzNzguNjEzLDE5Ny40NjEsMzU3LjA2NiwxNzUuOTE0LDMzMC41ODEsMTc1LjkxNHoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGQzYxQjsiIGQ9Ik0zODcuMzQ4LDM3Mi4wMzFIMjczLjgxM2MtNi43MzIsMC0xMi4xOS01LjQ1OC0xMi4xOS0xMi4xOXYtOTAuNTVjMC02LjczMiw1LjQ1OC0xMi4xOSwxMi4xOS0xMi4xOSAgaDExMy41MzVjNi43MzIsMCwxMi4xOSw1LjQ1OCwxMi4xOSwxMi4xOXY5MC41NUMzOTkuNTM4LDM2Ni41NzMsMzk0LjA4LDM3Mi4wMzEsMzg3LjM0OCwzNzIuMDMxeiIvPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNFQUEyMkY7IiBkPSJNMzg3LjM0OCwyNTcuMTAzaC01Ni45MzJ2MTE0LjkyOGg1Ni45MzJjNi43MzIsMCwxMi4xOS01LjQ1OCwxMi4xOS0xMi4xOXYtOTAuNTUgICBDMzk5LjUzOCwyNjIuNTYxLDM5NC4wOCwyNTcuMTAzLDM4Ny4zNDgsMjU3LjEwM3oiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNFQUEyMkY7IiBkPSJNMzQ2Ljk1OCwzMDQuMTc4YzAtOS4wNDUtNy4zMzItMTYuMzc3LTE2LjM3Ny0xNi4zNzdzLTE2LjM3Nyw3LjMzMi0xNi4zNzcsMTYuMzc3ICAgYzAsNi4wNTgsMy4yOTgsMTEuMzM1LDguMTg5LDE0LjE2OXYxOC4zMzdjMCw0LjUyMiwzLjY2Nyw4LjE4OSw4LjE4OSw4LjE4OWM0LjUyMiwwLDguMTg5LTMuNjY3LDguMTg5LTguMTg5di0xOC4zMzcgICBDMzQzLjY1OSwzMTUuNTEzLDM0Ni45NTgsMzEwLjIzNiwzNDYuOTU4LDMwNC4xNzh6Ii8+CjwvZz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGNTQxOTsiIGQ9Ik0zMzAuNTgxLDI4Ny44MDFjLTAuMDU1LDAtMC4xMDksMC4wMDktMC4xNjUsMC4wMDl2NTcuMDQ3YzAuMDU3LDAuMDAyLDAuMTA5LDAuMDE3LDAuMTY1LDAuMDE3ICBjNC41MjIsMCw4LjE4OS0zLjY2Nyw4LjE4OS04LjE4OXYtMTguMzM3YzQuODkxLTIuODMyLDguMTg5LTguMTA5LDguMTg5LTE0LjE2OUMzNDYuOTU4LDI5NS4xMzMsMzM5LjYyNSwyODcuODAxLDMzMC41ODEsMjg3LjgwMXoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" width="80px" />
+                        </div>
+                        <br>
+                        <a href='https://cas.tn.gov.in:8443/torus/6.0/wp/clt-1304/env_1/tnt-70/#/auth/signin' target="_blank"> <button class="sso_btn ad_btn  ">Admin Login</button></a>
+                   </div>
+                
+                </div>  
+            </div>
+            
+            
+            </div>
+            
+            
+            
+            
+         
+        </div>
+      </div>
+      
+    </div>
+            <!-- Modal end -->
+        </div>
+        <div class='row container tncontent'>
+            <ul class="cb-slideshow" id="video-background">
+                <li><span>Image 01</span></li>
+                <li><span>Image 02</span></li>
+                <li><span>Image 03</span></li>
+                <li><span>Image 04</span></li>
+                <li><span>Image 05</span></li>
+                <li><span>Image 06</span></li>
+            </ul>
+            <div class='col-sm-9  animate fadeInLeft time1'>
+                <div ng-view></div>
+            </div>
+            <div class='col-sm-3 animate fadeInLeft time2' style='margin-top: 0px; '>
+                
+            <div class="text-center">
+                <div style="border: 1px solid #6d5e5e;" class=" rghthelp rghtcontainer smsnote rtia">
+                    
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <h3 style="color: #041727;text-align: center; cursor: pointer; "><a href="https://www.tnesevai.tn.gov.in/Default.aspx"  target="_blank"> <img   width='45' height="45" src="images/esevai.png" />&nbsp;<br><span class="langeng" ng-if='tnegalang == "tnega_english" '>e-Sevai</span><span class="RTI" ng-if='tnegalang == "tnega_tamil"'>இ-சேவை</span></a> </h3>
+                    </div>
+                    <div class="col-md-5">
+                        <h3 style="color: #041727;text-align: center; cursor: pointer; "><a href="https://edistricts.tn.gov.in:8443/certificates_csc/"  target="_blank"> <img   width='45' height="45" src="images/esevai.png" /><br>&nbsp;<span class="langeng" ng-if='tnegalang == "tnega_english" '>e-District</span><span class="RTI" ng-if='tnegalang == "tnega_tamil"'>இ-மாவட்டம்</span></a> </h3>
+                    </div>
+                        <div class="col-md-1"></div>
+                        
+                    </div>
+                    
+                    
+                   
+                </div>
+            </div> 
+                <br>
+            <!--<div id="helpdeskid" class="text-center">
+                <div style="border: 1px solid #6d5e5e;" class=" rghthelp rghtcontainer smsnote">
+                    <h2 style="color: #114571;text-align: center;font-weight: 600;">{{datacontent[0].Help_desk.title}} </h2>
+                    
+                    <h2 style="color:black;">{{datacontent[0].Helpdesk_No['Helpdesk Title']}}  <br>{{datacontent[0].Helpdesk_No.Number}} &nbsp;&nbsp; <img  width='50' height="50" ng-src="{{datacontent[0].Helpdesk_No.icon}} " /></h2> 
+                </div>
+            </div>
+                <br>-->
+            
+             <!--<div class="text-center">
+                <div style="border: 1px solid #6d5e5e;" class=" rghthelp rghtcontainer smsnote rtia">
+                    <h3 style="color: #041727;text-align: center; cursor: pointer; "><a href="html/mysecondpage.html#/rti" > <img   width='30' height="30" src="images/info.png" />&nbsp;<span class="langeng" ng-if='tnegalang == "tnega_english" '>Right to Information ACT</span><span class="RTI" ng-if='tnegalang == "tnega_tamil"'>தகவல் உரிமை சட்டம்</span></a> </h3>
+                   
+                </div>
+            </div>
+                <br>-->
+                
+               
+            
+                <div style=" color: black; border-style: solid; border-width: 1px;border-color: grey;padding: 15px;background-color: rgb(255, 255, 255); ">
+                    <p style="text-align:center;background-color: rgb(51, 122, 183);"><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp; <span class="langeng" ng-if='tnegalang == "tnega_english" '><strong>What's New </strong></span><span class="langtm" ng-if='tnegalang == "tnega_tamil"' style=" font-size: 10px;">
+                        புதிய நிகழ்வுகள்</span> </p>
+                   
+                     
+                     <div class="microsoft news_tab">
+                         
+                     <div class="marquee">
+                        
+                        <div>
+                            <ul >
+                                <li id="fnt_color" ng-repeat='lst1 in datacontenthme[0].Whats_New.list'>
+                                <span ><i style="color:red" class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;  {{lst1.Text}}</span>
+                                <br>
+                                <span style="color:green"><i class="{{lst1.Icon}}" aria-hidden="true"></i>&nbsp;{{lst1.Date}}</span>   
+                                <br><hr><br>
+                                </li>
+                                 
+                            </ul>
+                            
+                            <!--<ol>
+                                <li id="fnt_color" ng-repeat="lst1 in  datacontent[0]['Whats_New'].List">
+                                {{lst1.Text}}
+                                <span style="color:green"><i class="{{lst1.Icon}}" aria-hidden="true"></i>&nbsp;{{lst1.Date}}</span>
+                                <hr>
+                                </li>
+                            </ol>-->
+                         </div>
+                         </div>
+                    </div>
+                   <!-- <a href="html/mysecondpage.html#/whats_new"><p id="fnt_color" class="text-right">More >></p></a>-->
+                </div>
+                <br>
+                <h2 class="btn rghtcollbtn helpcontent smsnote" style="">{{datacontent[0].Location.Title}}</h2>
+                <div class=" rghthelp rghtcontainer smsnote" style="">
+                             <br>
+                       <div class="text-center">
+                          <a href="html/mysecondpage.html#/sample" ><!--http://tnega.tn.gov.in/csclocation/" target="_blank"> -->
+                              
+                          <img width="60" height="60"  ng-src="{{datacontent[0].Location.image}}"></a> 
+                       </div>
+    
+                             <a href="html/mysecondpage.html#/sample" target="_blank"> <p style="padding:5px;text-align:center;color:black">
+                               <strong>{{datacontent[0].Location.label}}
+                               </strong>
+                                 </p></a>
+                        </div> 
+                <br>
+              
+                <br> </div>
+        </div>
+       <footer class="animate fadeInLeft time2">
+             
+               <div class="col-sm-12 copyright">
+                   
+                   
+            <div>
+                <div class="row ">
+                    
+                <div class="col-md-6 ">
+                    <div class="row">
+                        <h3><span class="langeng" ng-if='tnegalang == "tnega_english" '>Important Links</span><span class="langtm" ng-if='tnegalang == "tnega_tamil"'>முக்கிய இணைப்புகள்</span></h3>
+                        <!--<h3>{{datacontent[0].Footer['Important Links Title']}}</h3>-->
+                    <hr style="width: 200px;margin-top: 6px;margin-bottom: 20px;border: 0;border-top: 2px solid #e8b01b">
+                    <div class="col-md-6">
+                        
+                    <ul>
+                        <li ng-repeat="left in datacontent[0].Footer['Left Important Links']" class="Qlink"><i style="color:#f70202" class="{{left.icon}}" aria-hidden="true"></i>&nbsp;&nbsp;<a href="{{left['Link URL']}}" target="_blank">{{left['Link Label']}}</a>
+                    </ul>      
+        
+                    </div>
+                        
+                  <div class="col-md-6">
+                           <ul>
+                        <li ng-repeat="right in datacontent[0].Footer['Right Important Links']" class="Qlink"><i style="color:#f70202" class="{{right.icon}}" aria-hidden="true"></i>&nbsp;&nbsp;<a href="{{right['Link URL']}}" target="_blank">{{right['Link Label']}}</a>
+                    </ul> 
+                                   
+                                   
+                        
+             
+                    </div>
+                    
+                    </div>
+                    
+                    
+                     
+                    
+                </div>    
+                <div class="col-md-6">
+                    
+                    <h3><span class="langeng" ng-if='tnegalang == "tnega_english" '>Locate Us</span><span class="langtm" ng-if='tnegalang == "tnega_tamil"'>தொடர்பு கொள்ள</span></h3>
+                     <hr style="width: 200px;margin-top: 6px;margin-bottom: 20px;border: 0;border-top: 2px solid #e8b01b">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        
+                        
+                        <div class="col-md-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d971.7539356488309!2d80.25273577242203!3d13.034669382113691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb1e0767c666351c!2sTNeGa!5e0!3m2!1sen!2sin!4v1471929838371" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        
+                        </div>
+                        <div class="col-md-3"></div>
+                     </div>
+                       
+                </div>    
+                  
+                    
+                </div>
+           
+            </div>
+                  
+                   <br>
+                   <span style='margin-left: 150px;'><span ng-class="classnamelang" >{{datacontent[0].Footer['Important Links Title']}}</span></span>   <span style='float:right;font-size: 18px;'>
+                    <ul class='sociallinks'>
+                      <li><a href="https://www.facebook.com/TamilNadu-e-Governance-Agency-574278412959319/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                      <li><a href="https://twitter.com/ETamilnadu?s=09" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCiHop_kjrk5sk5lNK3qewbw" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                    </ul>
+                </span>
+                    
+                   
+                     <!--<span style='margin-left: 150px;'><span class="langeng" ng-if='tnegalang == "tnega_english" '>{{datacontent[0].footer.copyright_label}}  ©&nbsp; 2017  Tamil Nadu e-Governance Agency</span><span class="langtm" ng-if='tnegalang == "tnega_tamil"'>தமிழ்நாடு மின்-ஆளுமை முகமை</span></span>   <span style='float:right;font-size: 18px;'>
+                    <ul class='sociallinks'>
+                      <li><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                      <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                </span>-->
+                   
+       
+                   
+                </div>
+           
+              
+             
+            </footer>
+             
+    </div>
+</body>
+
+</html>
